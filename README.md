@@ -1,6 +1,6 @@
 # typo
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library designed to replace straight quotes with their appropriate "curly" HTML entities and dashes with their appropriate HTML entities.
 
 ## Usage
 
