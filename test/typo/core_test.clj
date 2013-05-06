@@ -17,7 +17,7 @@
 (deftest emdash-and-endash-get-dashified
   (testing "Em-dash and en-dash get dashified."
     (is (= (dashify "I can't tell you---but I can say that it's in the period 1800--1850.")
-           "I can't tell you&mdash;but I can say that it's in the period 1800&ndash;1850."))))
+           "I can't tell you&#8212;but I can say that it's in the period 1800&#8211;1850."))))
 
 ;; Quotify tests
 
