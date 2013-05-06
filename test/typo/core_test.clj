@@ -7,12 +7,12 @@
 (deftest emdash-gets-dashified
   (testing "Em-dash gets dashified."
     (is (= (dashify "I---I don't know")
-           "I&mdash;I don't know"))))
+           "I&#8212;I don't know"))))
 
 (deftest endash-gets-dashified
   (testing "En-dash gets dashified."
     (is (= (dashify "pages 15--18")
-           "pages 15&ndash;18"))))
+           "pages 15&#8211;18"))))
 
 (deftest emdash-and-endash-get-dashified
   (testing "Em-dash and en-dash get dashified."
