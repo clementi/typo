@@ -3,7 +3,9 @@
 
 (defn dashify [text]
   "Replace '---' and '--' with Unicode HTML entities"
-  (replace (replace text #"---" "&#8212;") #"--" "&#8211;"))
+  (let [dashified-text (replace text #"---" "&#8212;")
+        dashified-text (replace dashified-text #"--" "&#8211;")]
+    dashified-text))
 
 (defn quotify [text]
   "Converts straight quotes into the proper 'curly' ones."
